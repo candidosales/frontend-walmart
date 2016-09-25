@@ -83,21 +83,20 @@ a {
     background: #195a99;
 }
 
-.menu-main-item:hover > a .menu-main-item-title {
+.menu-main-item:hover a .menu-main-item-title, .menu-main-item:hover a .menu-main-item-icon {
     color: #f6b428;
-}
-
-.menu-main-item:hover > a .menu-main-item-icon {
-    background: #f6b428;
 }
 
 .menu-main-item-icon {
     height: 28px;
     width: 28px;
-    background: #fff;
+    color: #fff;
     display: block;
     margin: 5px auto;
+    text-align: center;
+    font-size: 28px;
 }
+
 .menu-main-item-title {
     font-size: 11px;
     color: #fff;
@@ -107,19 +106,20 @@ a {
     width: 200px;
 }
 
-.menu-main-item.all-categories > a .menu-main-item-icon{ 
-    float: left;
-    width: 10px;
-    height: 10px;
-    background: #f6b428;
-    margin-top: 21px;
-    margin-left: 15px;
-}
-
-.menu-main-item.all-categories > a .menu-main-item-title{ 
+.menu-main-item.all-categories > a .menu-main-item-title { 
     font-size: 16px;
     line-height: 50px;
 } 
+
+.menu-main-item-icon-circle.icon-circle-down {
+    float: left;
+    width: 10px;
+    height: 10px;
+    color: #f6b428;
+    margin-top: 21px;
+    font-size: 12px;
+    margin-left: 15px;
+}
 
 
 .submenu {
@@ -184,19 +184,19 @@ a {
     color: #fff; 
 }
 
-.cat-main {
+.cat-main, .carousel-banners {
     background:#fff;
     padding: 40px 30px;
     overflow: auto;
 }
 
-.cat-main-highlight {
+.cat-main-highlight, .carousel-banners-highlight {
     font-size: 24px;
     color: #666;
     display: inline-block;
     line-height: 26px;
 }
-.cat-content-menu {
+.cat-content-menu, .carousel-banners-content {
     width: 80%;
     float: right;
     height: 100px;
@@ -211,7 +211,9 @@ a {
     display: block;
     width: 60px;
     height: 60px;
-    background: #017DC7;
+    color: #017DC7;
+    text-align: center;
+    font-size: 55px;
     margin: 0 auto 10px auto;
 }
 
@@ -221,4 +223,19 @@ a {
 
 .cat-menu-title, .slick-prev:before, .slick-next:before { 
     color: #017DC7;
+}
+
+.carousel-banners {
+    background: #f2f2f2;
+    border-top: 1px solid #ccc;
+    padding: 40px 10px 40px 30px;
+}
+.carousel-banners-content img {
+    width: 100%;
+}
+
+.carousel-banner-item {
+    width: 31.33333333%;
+    float: left;
+    margin: 0 1%;
 }
